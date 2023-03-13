@@ -8,9 +8,9 @@ include("includes/header.php")
     <div class="main"> 
         <div class ="input"><form action="newtodo.php" method="POST" >
             
-                <label for="lägg till task" > lägg till task: </label> 
+                <label> lägg till task: </label> 
                 <br>
-                <input type="text" name="todo_name" id="" placeholder="skriva nya tasks . . .">
+                <input type="text" name="todo_name" placeholder="skriva nya tasks . . .">
                 <button type="submit" name="submit"> Lägg till </button>
            
         </form>  
@@ -34,24 +34,23 @@ $jsonArray = json_decode($json, true);
  foreach (($jsonArray) as $key => $value ) :  ?>
   <div class= "divtask"><p> <?php echo $value ; ?> </p> 
 
-  <a href="./delet.php?key ">
-                    <button class="del">
-                        Delete
-                    </button>
- </a>
+<div  class="button"> 
+         <a href="./delet.php?key ">   <p>         
+         Delete</P> </a>
+ </div>
+
    </div> 
 <?php  endforeach; ?>
 
 
  <div  class="rensa">
 
-    <a href="rensa.php"> <p>  Rensa allt </p>
+   <p> <a href="rensa.php">   Rensa allt </a> </p>
               
- </a>
+
   </div>
 
-
-
+ </div>
 <?php   
 include("includes/footer.php")
 ?>

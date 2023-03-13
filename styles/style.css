@@ -83,7 +83,21 @@ margin-left: 46.5%;
     font-weight: 600;
     padding-top: 20px;
 }
-
+.button {
+    width: 150px;
+    height: 30px;
+    background-color: rgba(146, 194, 237, 0.921);
+}
+.button p{
+    line-height: 20px;
+    text-align: center;
+    font-weight: 400;
+    color: black;
+    padding-top: 5px;
+}
+.button a:link{
+  text-decoration: none;
+}
 @media only screen and (max-width:1300px){
     .divtask {
         margin-left: 35%;

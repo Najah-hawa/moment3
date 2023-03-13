@@ -10,10 +10,11 @@ include ("config.php")
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+<body>
 <header> 
 <h1> DT093  Webbutveckling II </h1>
 </header> 
-<body>
+
 <?php
 echo "<h2> TO DO LIST</h2> ";
 echo "<h3> Lägg till nya tasks: </h3> ";
